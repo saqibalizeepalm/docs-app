@@ -1,0 +1,20 @@
+.markdown {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.markdown code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Add more styles as needed */
