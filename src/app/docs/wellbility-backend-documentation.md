@@ -1,5 +1,3 @@
-title: "Example Document"
-
 
 # Documentation for `ConsentForm.js` 📄
 
