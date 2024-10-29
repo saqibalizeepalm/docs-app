@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import styles from './markdown.module.css';
-
+import  DocuSearch from '../components/docSearch';
 const Post = async ({ params }) => {
   const { slug } = params;
 
@@ -18,9 +18,11 @@ const Post = async ({ params }) => {
   const contentHtml = processedContent.toString();
 
   return (
-    <div className={styles.markdown}>
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <div>
+      <div>
+      <DocuSearch/>
+      </div>
+      <div  className={styles.markdown}  dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
   );
 };
