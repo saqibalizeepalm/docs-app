@@ -1,0 +1,22 @@
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .markdown {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .content {
+    padding: 20px;
+  }

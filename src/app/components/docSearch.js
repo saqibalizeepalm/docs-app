@@ -33,7 +33,7 @@ const DocuSearch = () => {
     <div className='flex justify-center'>
        <DocSearch
         appId="T11OTANJ7U" // Replace with your Algolia app ID
-        apiKey="4c7704154788f0bbf566b15b21c35c5e" // Replace with your Algolia search-only API key
+        apiKey="158ae7fb7ab370014a1df386cf0b9f2d" // Replace with your Algolia search-only API key
         indexName="app-pearl" 
         placeholder="..."
         // className="absolute top-4 left-4 w-100" // Add your desired styling
