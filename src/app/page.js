@@ -5,25 +5,18 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 
 const DocsPage = async () => {
-  const docsDirectory = path.join('src/app/docs'); // Use process.cwd() for server-side paths
-  const files = fs.readdirSync(docsDirectory);
+//   const docsDirectory = path.join('src/app/docs'); 
+//   const files = fs.readdirSync(docsDirectory);
   
-  const docs = files
-    .filter((file) => file.endsWith('.md')) // Keep only .md files
-    .map((file) => ({
-      slug: file.replace('.md', ''),
-    }));
+//   const docs = files
+//     .filter((file) => file.endsWith('.md')) 
+//     .map((file) => ({
+//       slug: file.replace('.md', ''),
+//     }));
 
-  // Redirect to the first document if there are any
-  if (docs.length > 0) {
-    redirect(`/${docs[0].slug}`);
-  }else {
-     notFound();
+ 
+    redirect(`/account-verification-html`);
 
-  }
-
-  // If no documents, do not render anything
-  return null; // Prevents rendering anything when there are no docs
 };
 
 export default DocsPage;
