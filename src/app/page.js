@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const DocsPage = async () => {
-  const docsDirectory = path.join(process.cwd(), 'src/app/docs'); // Use process.cwd() for server-side paths
+  const docsDirectory = path.join('src/app/docs'); // Use process.cwd() for server-side paths
   const files = fs.readdirSync(docsDirectory);
   
   const docs = files
