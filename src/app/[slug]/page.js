@@ -20,7 +20,7 @@ const Post = async ({ params }) => {
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
-  const docs = fs.readdirSync(path.join('src/app/docs')).filter(file => file.endsWith('.md'))
+  const docs = fs.readdirSync(path.join(process.cwd(),'src/app/docs')).filter(file => file.endsWith('.md'))
   .map((file) => ({
     slug: file.replace('.md', ''),
   }));
