@@ -2,6 +2,7 @@
 import { redirect } from 'next/navigation'; // Import redirect
 import fs from 'fs';
 import path from 'path';
+import { notFound } from 'next/navigation';
 
 const DocsPage = async () => {
   const docsDirectory = path.join('src/app/docs'); // Use process.cwd() for server-side paths
@@ -16,6 +17,9 @@ const DocsPage = async () => {
   // Redirect to the first document if there are any
   if (docs.length > 0) {
     redirect(`/${docs[0].slug}`);
+  }else {
+     notFound();
+
   }
 
   // If no documents, do not render anything
