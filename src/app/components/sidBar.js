@@ -9,7 +9,7 @@ const Sidebar = ({ docs }) => {
 
  
   return (
-    <nav className="w-1/5 bg-gray-800 text-white p-4 h-screen overflow-y-auto shadow-lg sticky top-0"> {/* Sticky sidebar */}
+    <nav className="w-1/5 bg-gray-800 text-white p-4 h-screen overflow-y-auto shadow-lg sticky top-0 pb-10"> {/* Sticky sidebar */}
     <div className='flex justify-center'>
     <h2 className="text-lg  text-center font-semibold mb-4">Documentation</h2>
     </div>

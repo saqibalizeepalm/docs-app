@@ -27,9 +27,9 @@ const Post = async ({ params }) => {
 
 
   return (
-    <div style={{ display: 'flex' }} className="w-full  flex h-screen overflow-hidden">
+    <div style={{ display: 'flex' }} className="w-full  flex h-screen overflow-hidden ">
       <Sidebar docs={docs} />
-      <div className={styles.markdown} style={{ width: '80%', height:"100vh", overflowY: "auto" }}>
+      <div className={styles.markdown} style={{ width: '80%', overflowY: "auto" }}>
         <DocuSearch />
         <div
           dangerouslySetInnerHTML={{ __html: contentHtml }}
