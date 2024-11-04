@@ -6,7 +6,6 @@ import 'docsearch.js/dist/cdn/docsearch.css';
 import '@docsearch/css/dist/style.css'; 
 
 const DocuSearch = () => {
-
   return (
     <div className='flex justify-center'>
        <DocSearch
@@ -14,6 +13,17 @@ const DocuSearch = () => {
         apiKey="92e4a4992547d97ce812e4ff8e7f6cb3" // Replace with your Algolia search-only API key
         indexName="app-pearl" 
         placeholder="..."
+        transformItems={(items) =>
+            items.map((item) => ({
+              ...item,
+              url: item.url, // Ensure this corresponds to your Next.js routing
+            }))
+          }
+          hitComponent={({ hit }) => (
+            <a href={hit.url}>
+              {hit.title}
+            </a>
+          )}
       />
       </div>
   );
